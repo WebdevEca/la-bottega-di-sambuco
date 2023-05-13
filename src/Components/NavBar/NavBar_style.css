@@ -1,0 +1,33 @@
+#NavBar {
+    width: 100%;
+    height: auto;
+   position: fixed;
+    display: flex;
+    align-items: center;
+   padding: 15px 0;
+   justify-content: space-between;
+}
+
+.logoSambuco {
+    position: relative;
+    width: 50px;
+    height: auto;
+    padding-left: 200px;
+}
+
+.burgerMenu {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-right: 200px;
+    cursor: pointer;
+}
+
+.burgerMenu path {
+    fill: #7FB17F;
+}
+
+.burgerMenu:hover path {
+    fill: #006400;
+    transition: 300ms;
+}
