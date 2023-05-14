@@ -1,0 +1,42 @@
+.btn {
+    width: 168px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #006400;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn h3 {
+    font-family: "Roboto";
+    color: #006400;
+    font-size: 16px;
+}
+
+.btnIcon {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+.btnIcon path {
+fill: #006400;
+}
+
+.btn:hover {
+background-color: #006400;
+transition: 300ms;
+}
+
+.btn:hover > * {
+    color: #F5F5F5;
+    transition: 300ms;
+}
+
+.btn:hover > .btnIcon path {
+    fill: #F5F5F5;
+    transition: 300ms;
+}
