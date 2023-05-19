@@ -54,3 +54,23 @@
     margin-left: 78px;
     top: 230px;
 }
+
+@media (max-width: 1550px) {
+    /* Stili specifici per schermi di larghezza massima di 1550px */
+
+    #shopContainer {
+        background-image: url("../../../Images/Home\ Page/ShopLinksBackgroundLaptop.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .shopHeader {
+        top: 125px;
+        left: 189px;
+    }
+
+    .bottoni {
+        top: 175px;
+        margin-left: 15px;
+    }
+}

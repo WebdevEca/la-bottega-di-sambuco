@@ -44,3 +44,17 @@
  background-color: #006400;
  transition: 300ms;
 }
+
+
+@media (max-width: 1550px) {
+    /* Stili specifici per schermi di larghezza massima di 1550px */
+.welcomeHeader {
+        position: absolute;
+        text-align: center;
+        bottom: auto;
+        left: auto;
+        top: 225px;
+        right: 100px;
+    }
+
+}

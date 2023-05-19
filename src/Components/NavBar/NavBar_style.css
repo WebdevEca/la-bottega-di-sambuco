@@ -1,19 +1,19 @@
 #NavBar {
-    width: 100%;
+   width: 100%;
     height: auto;
    position: fixed;
     display: flex;
     align-items: center;
    padding: 15px 0;
    justify-content: space-between;
-   transition: 0.3s;
+   transition: 0.1s; 
 }
 
 .logoSambuco {
     position: relative;
     width: 50px;
     height: auto;
-    padding-left: 200px;
+    margin-left: 200px;
 }
 
 .burgerMenu {
@@ -31,4 +31,28 @@
 .burgerMenu:hover path {
     fill: #006400;
     transition: 300ms;
+}
+
+#NavBar.scrolled {
+    width: 50%;
+    height: auto;
+    margin-top: 25px;
+    border-radius: 500px;
+    border: 1px solid #654321;
+    background-color: #F5F5F5;
+    z-index: 1;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#NavBar.scrolled .logoSambuco {
+    margin-left: 100px;
+    width: 35px;
+    height: auto;
+}
+
+#NavBar.scrolled .burgerMenu {
+    width: 25px;
+    height: auto;
+    margin-right: 100px; 
 }
