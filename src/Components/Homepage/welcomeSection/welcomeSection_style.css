@@ -59,3 +59,31 @@
     }
 
 }
+
+@media (max-width: 1024px) {
+    #welcomeContainer {
+        background-image: url("../../../Images/Home\ Page/HomeBackgroundTablet.png");
+        }
+
+     .welcomeHeader {
+        top: auto;
+        left: auto;
+        bottom: 400px;
+        right: 10px;
+        }
+
+     .welcomeHeader h1 {
+        font-size: 40px;
+     }
+
+    .welcomeHeader h2 {
+        font-size: 20px;
+    } 
+}
+
+@media (max-width: 430px) {
+    #welcomeContainer {
+            background-image: url("../../../Images/Home\ Page/HomeBackgroundSmartphone.png");
+        }
+
+}

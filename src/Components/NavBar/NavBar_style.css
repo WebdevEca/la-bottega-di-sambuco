@@ -142,3 +142,50 @@
 .navLinks.slideOut {
     animation: slideOut 0.5s ease;
 }
+
+@media (max-width: 1024px){
+
+    .burgerMenu{
+        margin-right: 150px;
+    }
+
+    .logoSambuco {
+        margin-left: 150px;
+    }
+
+    #NavBar.scrolled{
+        width: 75%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media (max-width: 430px) {
+    #NavBar{
+        width: 100%;
+    }
+
+    .burgerMenu {
+        margin-right: 50px;
+    }
+
+    .logoSambuco {
+        margin-left: 50px;
+    }
+
+    #NavBar.scrolled .logoSambuco {
+        margin-left: 35px;
+    }
+
+    #NavBar.scrolled .burgerMenu {
+        margin-right: 35px;
+    }
+
+    .navLinks ul {
+        grid-gap: 10px;
+    }
+
+    .navLinks li {
+        font-size: 10px;
+    }
+}

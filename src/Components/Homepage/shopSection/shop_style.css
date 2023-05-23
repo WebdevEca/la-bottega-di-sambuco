@@ -75,3 +75,46 @@
         margin-left: 15px;
     }
 }
+
+@media (max-width: 1024px) {
+    #shopContainer{
+        width: 100%;
+        height: 439px;
+        background-image: url("../../../Images/Home\ Page/ShopLinksBackgroundTablet.png");
+    }
+
+    .shopHeader {
+        width: 302px;
+        height: 118px;
+        top: 43px;
+        left: 57px;
+    }
+
+        .shopHeader h1 {
+            font-size: 36px;
+            margin: 15px 0;
+        }
+    
+        .shopHeader h2 {
+            font-size: 18px;
+        }
+
+    .bottoni {
+        width: 356.73px;
+        height: 205px;
+        top: 75px;
+        margin-left: 30px;
+    }
+
+    .bottoniSuperiori {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    #shopContainer {
+        background-image: none;
+    }
+}
