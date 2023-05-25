@@ -1,0 +1,166 @@
+#aboutMeContainer {
+    width: 100%;
+    height: auto;
+}
+
+.aboutMeHome{
+    width: 100%;
+    height: 1080px;
+    background-image: url("../../Images/AboutMe/AboutMeBackgroundDesktop.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.aboutMeHome h1 {
+    width: 152px;
+    height: 61px;
+    font-family: "Lora";
+    font-size: 48px;
+    color: #006400;
+    position: relative;
+    left: 385px;
+    top: 256px;
+}
+
+.aboutMeIcons {
+    width: 435.96px;
+    height: 173.99px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 68px;
+    position: relative;
+    left: 243px;
+    top: 330px;
+}
+
+.aboutMeIcon {
+    width: auto;
+    height: 75px;
+}
+
+.aboutMeIcon path {
+    fill: #006400;
+}
+
+.iconaSarta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+}
+
+.iconaSarta p {
+    width: 57px;
+    height: 28px;
+    font-family: 'Roboto';
+    font-size: 24px;
+    color: #006400;
+}
+
+.iconaSpecchio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+}
+
+.specchioP p {
+    font-family: 'Roboto';
+    font-size: 24px;
+    color: #006400;
+    text-align: center;
+}
+
+.iconaArtigiana {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+}
+
+.iconaArtigiana p {
+    font-family: 'Roboto';
+    font-size: 24px;
+    color: #006400;
+}
+
+.bottoneFreccia {
+
+        box-sizing: border-box;
+        background-color: transparent;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px;
+        gap: 10px;
+    
+        position: absolute;
+        width: 435px;
+        height: 55px;
+        left: 245px;
+        top: 770px;
+    
+        border: 1px solid #006400;
+        border-radius: 4px;
+
+        cursor: pointer;
+}
+
+.iconaFreccia {
+    width: 23.01px;
+    height: 25px;
+    animation: arrowAnimation 0.8s infinite;
+}
+
+.iconaFreccia path {
+    fill: #006400;
+}
+
+@keyframes arrowAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(5px);
+    }
+
+    50%{
+        transform: translateY(0)
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+#aboutMeDescription {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    justify-content: center;
+}
+
+#aboutMeDescription h1 {
+    font-family: "Lora";
+    font-size: 48px;
+    color: #006400;
+    text-align: center;
+}
+
+.Paragrafo p {
+    text-align: center;
+    color: #006400;
+    font-family: "Roboto";
+    font-size: 24px;
+}
