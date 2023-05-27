@@ -1,14 +1,16 @@
 #aboutMeContainer {
     width: 100%;
     height: auto;
+    background-color: #f5f5f5;
 }
 
 .aboutMeHome{
     width: 100%;
-    height: 1080px;
+    height: 969px;
     background-image: url("../../Images/AboutMe/AboutMeBackgroundDesktop.png");
     background-position: center;
     background-size: cover;
+    border-bottom: 1px solid #654321;
 }
 
 .aboutMeHome h1 {
@@ -33,7 +35,7 @@
     gap: 68px;
     position: relative;
     left: 243px;
-    top: 330px;
+    top: 367px;
 }
 
 .aboutMeIcon {
@@ -163,4 +165,101 @@
     color: #006400;
     font-family: "Roboto";
     font-size: 24px;
+}
+@media (max-width: 1536px) {
+    .aboutMeHome {
+        height: 100vh;
+    }
+
+    .aboutMeHome h1 {
+        left: 265px;
+        top: 125px;
+    }
+
+    .aboutMeIcons {
+        left: 125px;
+        top: 200px;
+    }
+
+    .bottoneFreccia {
+        left: 125px;
+        top: 600px;
+    }
+
+    #aboutMeDescription {
+        height: 650px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    #aboutMeDescription {
+        height: 1206px;
+    }
+
+    .aboutMeHome {
+        width: 100%;
+        height: 100vh;
+        background-image: url("../../Images/AboutMe/AboutMeBackgroundTablet.png");
+        background-size: 755px 650px;
+       background-repeat: no-repeat;
+       background-position: center 125px;
+    }
+
+    .aboutMeHome h1 {
+        top: 878px;
+        left: 436px;
+    }
+
+    .aboutMeIcons {
+        top: 925px;
+        left: 295px;
+    }
+
+    .bottoneFreccia {
+        width: 350px;
+        top: 1225px;
+        left: 337px;
+    }
+
+    .paragrafo p {
+        margin: 0 75px;
+    }
+}
+
+@media (max-width: 430px) {
+    .aboutMeHome {
+        width: 100%;
+        height: 100vh;
+        background-image: url("../../Images/AboutMe/AboutMeBackgroundTablet.png");
+        background-size: auto 350px;
+        background-repeat: no-repeat;
+        background-position: center 100px;
+        }
+
+    .aboutMeHome h1 {
+            top: 467px;
+           left: 158px;
+            font-size: 36px;
+        }
+
+     .aboutMeIcon {
+        height: 50px;
+     }
+    
+    .aboutMeIcons {
+        width: 420px;
+        top: 500px;
+        left: 5px;
+    }
+    
+    .bottoneFreccia {
+        width: 310px;
+        top: 800px;
+        left: 60px;
+    }
+
+    .Paragrafo p {
+        margin: 0 25px;
+    }
 }
