@@ -17,10 +17,19 @@ const FindMe = () => {
         <div className="iconContainer">
           <hr />
 
-          <InstagramLink className="socialIcon" />
-          <FacebookLink className="socialIcon" />
-          <TikTokLink className="socialIcon" />
-          <LinkedInLink className="socialIcon" />
+          <a href="https://www.instagram.com/la_bottega_di_sambuco/">
+            <InstagramLink className="socialIcon" />
+          </a>
+          <a href="https://www.facebook.com/Claire.sfx">
+            <FacebookLink className="socialIcon" />
+          </a>
+          <a href="https://www.tiktok.com/@labottegadisambuco?_t=8as3jiioi9m&_r=1">
+            <TikTokLink className="socialIcon" />
+          </a>
+
+          <a href="blank">
+            <LinkedInLink className="socialIcon" />
+          </a>
 
           <hr />
         </div>

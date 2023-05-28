@@ -84,6 +84,13 @@
     color: #006400;
     position: relative;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.linkComponent {
+    text-decoration: none;
+    font-family: "roboto";
+    color: #006400;
 }
 
 .navLinks li::before {
@@ -96,6 +103,7 @@
     background-color: #006400;
     transition: width 0.5s;
     border-radius: 500px;
+    text-decoration: none;
 }
 
 .navLinks li:hover::before {

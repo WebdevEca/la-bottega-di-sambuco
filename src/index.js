@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AboutMe from "./Components/AboutMe/AboutMe_component";
 import Home from "./Components/Homepage/Home_component";
+import Anelli from "./Components/VetrinaAnelli/VetrinaAnelli_component";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,30 @@ const router = createBrowserRouter([
   {
     path: "about_me/",
     element: <AboutMe />,
+  },
+  {
+    path: "anelli/",
+    element: <Anelli />,
+  },
+  {
+    path: "bracciali/",
+    element: <Anelli />,
+  },
+  {
+    path: "collane/",
+    element: <Anelli />,
+  },
+  {
+    path: "orecchini/",
+    element: <Anelli />,
+  },
+  {
+    path: "vestiti/",
+    element: <Anelli />,
+  },
+  {
+    path: "corsetti/",
+    element: <Anelli />,
   },
 ]);
 

@@ -1,4 +1,7 @@
 import Button from "../../Buttons/button_component";
+import { Link } from "react-router-dom";
+
+// lo style classe linkComponent si trova nel css della navBar
 
 import "./shop_style.css";
 
@@ -13,15 +16,27 @@ const ShopSection = () => {
 
       <div className="bottoni">
         <div className="bottoniSuperiori">
-          <Button text="Anelli" iconName="anello" />
-          <Button text="Bracciali" iconName="bracciale" />
-          <Button text="Collane" iconName="collana" />
-          <Button text="Orecchini" iconName="orecchini" />
+          <Link to={`anelli/`} className="linkComponent">
+            <Button text="Anelli" iconName="anello" />
+          </Link>
+          <Link to={`bracciali/`} className="linkComponent">
+            <Button text="Bracciali" iconName="bracciale" />
+          </Link>
+          <Link to={`collane/`} className="linkComponent">
+            <Button text="Collane" iconName="collana" />
+          </Link>
+          <Link to={`orecchini/`} className="linkComponent">
+            <Button text="Orecchini" iconName="orecchini" />
+          </Link>
         </div>
 
         <div className="bottoniInferiori">
-          <Button text="Vestiti" iconName="vestito" />
-          <Button text="Corsetti" iconName="corsetto" />
+          <Link to={`vestiti/`} className="linkComponent">
+            <Button text="Vestiti" iconName="vestito" />
+          </Link>
+          <Link toto={`corsetti/`} className="linkComponent">
+            <Button text="Corsetti" iconName="corsetto" />
+          </Link>
         </div>
       </div>
     </div>
