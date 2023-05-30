@@ -144,20 +144,6 @@
     gap: 20px;
     }
 }
-
-@media screen and (max-width: 1000px) {
-    #shopContainer {
-            background-image: none;
-        }
-    
-        .shopHeader {
-            left: 29%;
-        }
-    
-        .bottoni {
-            margin-left: 26%;
-        }
-}
  
 @media screen and (max-width: 768px) {
     #shopContainer {

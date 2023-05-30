@@ -10,7 +10,7 @@ const Home = () => {
       <NavBar />
       <WelcomeSection />
       <ShopSection />
-      {/* <FindMe /> */}
+      <FindMe />
       <Footer />
     </div>
   );
