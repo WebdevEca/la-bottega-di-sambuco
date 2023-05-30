@@ -112,6 +112,17 @@
     } 
 }
 
+@media screen and (max-width: 1000px) {
+    #welcomeContainer {
+        background-image: url("../../../Images/Home\ Page/Home768px.png");
+    }
+    
+    .welcomeHeader {
+        top: 35%;
+        right: 23%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #welcomeContainer {
         background-image: url("../../../Images/Home\ Page/Home768px.png");
