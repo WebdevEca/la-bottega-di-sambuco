@@ -52,6 +52,12 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+    .iconContainer hr {
+        width: 50px;
+    }
+}
+
 @media (max-width:1024px) {
     #findMeContainer{
         width: 100%;
@@ -94,4 +100,12 @@
     font-size: 36px;
     margin: 20px 0;
 }
+}
+
+@media screen and (max-width: 375px){
+
+    .iconContainer hr {
+        width: 25px;
+    }
+    
 }

@@ -13,8 +13,8 @@
     text-align: center;
     bottom: auto;
     left: auto;
-    top: 400px;
-    right: 150px;
+    top: 40%;
+    right: 10%;
 }
 
 .welcomeHeader h1 {
@@ -46,30 +46,61 @@
  transition: 300ms;
 }
 
+@media screen and (max-width: 2560px){
 
-@media (max-width: 1550px) {
-    /* Stili specifici per schermi di larghezza massima di 1550px */
-.welcomeHeader {
-        position: absolute;
-        text-align: center;
-        bottom: auto;
-        left: auto;
-        top: 225px;
-        right: 100px;
+    .welcomeHeader h1 {
+        font-size: 64px;
+    }
+
+    .welcomeHeader h2 {
+        font-size: 32px;
+    }
+
+    .welcomeHeader button {
+        width: 228px;
+        font-size: 20px;
     }
 
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1920px) {
+    .welcomeHeader h1 {
+        font-size: 48px;
+    }
+
+    .welcomeHeader h2 {
+        font-size: 24px;
+    }
+
+        .welcomeHeader button {
+            width: 195px;
+            font-size: 16px;
+        }
+}
+
+@media screen and (max-width: 1550px) {
+    /* Stili specifici per schermi di larghezza massima di 1550px */
+.welcomeHeader {
+        position: absolute;
+        text-align: center;
+        top: 35%;
+        right: 5%;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 1024px) {
     #welcomeContainer {
         background-image: url("../../../Images/Home\ Page/HomeBackgroundTablet.png");
         }
 
      .welcomeHeader {
-        top: auto;
-        left: auto;
-        bottom: 400px;
-        right: 10px;
+        top: 50%;
+        right: 0.7%;
         }
 
      .welcomeHeader h1 {
@@ -81,9 +112,24 @@
     } 
 }
 
-@media (max-width: 430px) {
+@media screen and (max-width: 768px) {
+    #welcomeContainer {
+        background-image: url("../../../Images/Home\ Page/Home768px.png");
+    }
+
+    .welcomeHeader {
+        top: 35%;
+        right: 23%;
+    }
+}
+
+@media screen and (max-width: 430px) {
     #welcomeContainer {
             background-image: url("../../../Images/Home\ Page/HomeBackgroundSmartphone.png");
         }
+
+    .welcomeHeader {
+        right: 1.5%;
+    }
 
 }
