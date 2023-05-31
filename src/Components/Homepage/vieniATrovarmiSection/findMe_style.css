@@ -30,11 +30,11 @@
 
 }
 
-/* .iconContainer hr {
-    width: 25px;
+.iconContainer hr {
+    width: 100px;
     height: 1px;
     background-color: #f5f5f5;
-} */
+}
 
 .iconContainer {
     height: 50px;
@@ -52,9 +52,87 @@
     cursor: pointer;
 }
 
-@media screen and(max-width:1024px) {
+@media screen and (max-width:1024px) {
     #findMeContainer{
         width: 100%;
         height: 500px;
+    }
+
+    .iconContainer{
+        gap: 75px;
+    }
+
+   .iconContainer hr {
+       width: 50px;
+       height: 1px;
+       background-color: #f5f5f5;
+   }
+}
+
+@media screen and (max-width:605px) {
+    #findMeContainer {
+        height: 300px;
+    }
+
+    .textContainer {
+        margin-bottom: 50px;
+    }
+
+    .textContainer h1 {
+        font-size: 40px;
+        margin: 15px 0;
+    }
+
+    .textContainer h2 {
+        font-size: 20px;
+    }
+
+    .iconContainer {
+        gap: 50px;
+    }
+
+    .iconContainer hr {
+         width: 25px;
+    }
+
+    .socialIcon {
+        width: auto;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    
+    #findMeContainer {
+        height: 225px;
+    }
+
+    .textContainer {
+        margin-bottom: 25px;
+    }
+
+    .textContainer h1 {
+        font-size: 36px;
+    }
+
+    .textContainer h2 {
+        font-size: 18px;
+    }
+
+    .socialIcon {
+        width: auto;
+        height: 25px;
+    }
+
+    .iconContainer hr {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .iconContainer hr {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
     }
 }

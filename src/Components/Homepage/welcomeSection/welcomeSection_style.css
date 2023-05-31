@@ -95,14 +95,13 @@
 
 @media screen and (max-width: 1024px) {
     #welcomeContainer {
-        background-image: url("../../../Images/Home\ Page/HomeBackgroundTablet.png");
+            background-image: url("../../../Images/Home\ Page/Home768px.png");
         }
 
-     .welcomeHeader {
-        top: 50%;
-        right: 0.7%;
+        .welcomeHeader {
+            top: 40%;
+            right: 29%;
         }
-
      .welcomeHeader h1 {
         font-size: 40px;
      }
@@ -120,6 +119,13 @@
     .welcomeHeader {
         top: 35%;
         right: 23%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .welcomeHeader {
+        top: 38%;
+        right: 15%;
     }
 }
 
