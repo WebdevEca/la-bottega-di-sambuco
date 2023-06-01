@@ -173,20 +173,35 @@
         width: 100%;
     }
 
+        #NavBar.scrolled {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
     .burgerMenu {
-        margin-right: 50px;
+        width: 35px;
+        margin-right: 35px;
     }
 
     .logoSambuco {
-        margin-left: 50px;
-    }
-
-    #NavBar.scrolled .logoSambuco {
+        width: 35px;
         margin-left: 35px;
     }
 
+    #NavBar.scrolled .logoSambuco {
+        width: 25px;
+        margin-left: 25px;
+    }
+
     #NavBar.scrolled .burgerMenu {
-        margin-right: 35px;
+        width: 25px;
+        margin-right: 25px;
+    }
+
+    #NavBar.scrolled .iconX {
+        width: 15px;
+        height: 15px;
     }
 
     .navLinks ul {
@@ -194,6 +209,14 @@
     }
 
     .navLinks li {
-        font-size: 10px;
+        font-size: 12px;
     }
+}
+
+@media (max-width: 400px) {
+ 
+    .bottoniInferiori {
+        width: 356px;
+    }
+
 }

@@ -155,16 +155,6 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .shopHeader {
-        left: 25%;
-    }
-
-    .bottoni {
-        margin-left: 20%;
-    }
-}
-
 @media screen and (max-width: 430px) {
     #shopContainer {
         background-image: none;
@@ -188,6 +178,11 @@
     .bottoni {
         margin-left: 5.5%;
     }
+
+    .bottoniInferiori {
+        width: 310px;
+        justify-content: unset;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -198,5 +193,22 @@
 
     .bottoni {
         margin-left: 2.5%;
+    }
+} 
+
+@media screen and (max-width:350px) {
+
+    .shopHeader {
+        left: 6%;
+    }
+
+    .bottoni {
+        width: 310px;
+        margin-left: 5%;
+    }
+
+    .bottoniInferiori {
+        justify-content: unset;
+        width: 310px;
     }
 }

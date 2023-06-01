@@ -130,9 +130,22 @@
 }
 
 @media screen and (max-width: 400px) {
+
+    .textContainer h2 {
+        font-size: 16px;
+    }
+
+    .textContainer h1 {
+        font-size: 30px;
+    }
+
     .iconContainer hr {
         width: 5px;
         height: 5px;
         border-radius: 50%;
+    }
+
+    .socialIcon {
+        height: 20px;
     }
 }

@@ -6,7 +6,7 @@
 
 .aboutMeHome{
     width: 100%;
-    height: 969px;
+    height: 100vh;
     background-image: url("../../Images/AboutMe/AboutMeBackgroundDesktop.png");
     background-position: center;
     background-size: cover;
@@ -94,26 +94,26 @@
 
 .bottoneFreccia {
 
-        box-sizing: border-box;
-        background-color: transparent;
+    box-sizing: border-box;
+    background-color: transparent;
     
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 30px;
-        gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
     
-        position: absolute;
-        width: 435px;
-        height: 55px;
-        left: 245px;
-        top: 770px;
+    position: absolute;
+    width: 435px;
+    height: 55px;
+    left: 245px;
+    top: 770px;
     
-        border: 1px solid #006400;
-        border-radius: 4px;
+    border: 1px solid #006400;
+    border-radius: 4px;
 
-        cursor: pointer;
+    cursor: pointer;
 }
 
 .iconaFreccia {
@@ -146,7 +146,7 @@
 
 #aboutMeDescription {
     width: 100%;
-    height: 800px;
+    height: 920px;
     display: flex;
     flex-direction: column;
     gap: 75px;
@@ -166,32 +166,143 @@
     font-family: "Roboto";
     font-size: 24px;
 }
-@media (max-width: 1536px) {
+
+/* @media screen and (max-width: 2560px) {
+
+    #aboutMeDescription {
+        height: 1280px;
+        gap: 100px;
+    }
+
+    #aboutMeDescription h1 {
+        font-size: 64px;
+    }
+
+    .Paragrafo p {
+        font-size: 36px;
+    }
+
     .aboutMeHome {
+        width: 100%;
         height: 100vh;
     }
 
     .aboutMeHome h1 {
-        left: 265px;
-        top: 125px;
+        width: 303px;
+        height: 123px;
+        font-size: 96px;
+        left: 18%;
+        top: 15%;
     }
 
     .aboutMeIcons {
-        left: 125px;
-        top: 200px;
+        width: 1100px;
+        height: 348px;
+        top: 25%;
+        left: 3%;
+    }
+
+    .aboutMeIcon{
+        width: auto;
+        height: 100px;
+    }
+
+    .iconaArtigiana p{
+        font-size: 40px;
+    }
+
+    .specchioP p {
+        font-size: 40px;
+    }
+
+    .iconaSarta p {
+        width: 84px;
+        height: 41px;
+        font-size: 35px;
     }
 
     .bottoneFreccia {
-        left: 125px;
-        top: 600px;
+        width: 870px;
+        top: 85%;
+        left: 8%;
     }
+} */
+
+@media screen and (max-width: 1920px) {
 
     #aboutMeDescription {
-        height: 650px;
+        height: 920px;
+        gap: 75px;
+    }
+    
+    #aboutMeDescription h1 {
+        font-size: 48px;
+    }
+    
+     .Paragrafo p {
+        font-size: 24px;
+    }
+    
+    .aboutMeHome h1 {
+        width: 152px;
+        height: 61px;
+        font-size: 48px;
+        left: 20%;
+        top: 23%;
+    }
+    
+    .aboutMeIcons {
+        width: 435.96px;
+        height: 173.99px;
+        top: 30%;
+        left: 12.5%;
+    }
+    
+    .aboutMeIcon {
+        width: auto;
+        height: 75px;
+    }
+    
+    .iconaArtigiana p {
+        font-size: 24px;
+    }
+    
+    .specchioP p {
+        font-size: 24px;
+    }
+    
+    .iconaSarta p {
+        width: 57px;
+        height: 28px;
+        font-size: 24px;
+    }
+    
+    .bottoneFreccia {
+        width: 435px;
+        top: 85%;
+        left: 12.5%;
     }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1550px) {
+    .aboutMeHome {
+        height: 100vh;
+    }
+
+   .aboutMeHome h1 {
+        left: 22%;
+    }
+ 
+    #aboutMeDescription {
+        height: 650px;
+    }
+
+    .Paragrafo p {
+        margin: 0 5%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
 
     #aboutMeDescription {
         height: 1206px;
@@ -201,65 +312,153 @@
         width: 100%;
         height: 100vh;
         background-image: url("../../Images/AboutMe/AboutMeBackgroundTablet.png");
-        background-size: 755px 650px;
+        background-size: 75% 45%;
        background-repeat: no-repeat;
-       background-position: center 125px;
+       background-position: center 15%;
     }
 
     .aboutMeHome h1 {
-        top: 878px;
-        left: 436px;
+        top: 60%;
+        left: 43%;
     }
 
     .aboutMeIcons {
-        top: 925px;
-        left: 295px;
+        top: 65%;
+        left: 29%
     }
 
     .bottoneFreccia {
         width: 350px;
-        top: 1225px;
-        left: 337px;
-    }
-
-    .paragrafo p {
-        margin: 0 75px;
-    }
-}
-
-@media (max-width: 430px) {
-    .aboutMeHome {
-        width: 100%;
-        height: 100vh;
-        background-image: url("../../Images/AboutMe/AboutMeBackgroundTablet.png");
-        background-size: auto 350px;
-        background-repeat: no-repeat;
-        background-position: center 100px;
-        }
-
-    .aboutMeHome h1 {
-            top: 467px;
-           left: 158px;
-            font-size: 36px;
-        }
-
-     .aboutMeIcon {
-        height: 50px;
-     }
-    
-    .aboutMeIcons {
-        width: 420px;
-        top: 500px;
-        left: 5px;
-    }
-    
-    .bottoneFreccia {
-        width: 310px;
-        top: 800px;
-        left: 60px;
+        top: 90%;
+        left: 33%;
     }
 
     .Paragrafo p {
-        margin: 0 25px;
+        margin: 0 15%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .aboutMeIcons {
+        left: 26%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .aboutMeHome h1 {
+        left: 41%;
+    }
+
+    .aboutMeIcons {
+        left: 22%;
+    }
+
+    .bottoneFreccia {
+        left: 29%;
+    }
+
+    .aboutMeHome {
+        background-size: 75% 40%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .aboutMeHome h1 {
+        top: 55%;
+        left: 40%;
+    }
+
+    .aboutMeIcons {
+        top: 60%;
+        left: 17%;
+    }
+
+    .bottoneFreccia {
+        left: 25%;
+    }
+
+    .aboutMeHome {
+        background-size: 75% 37%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .aboutMeHome h1 {
+        top: 55%;
+        left: 38%;
+    }
+
+    .aboutMeIcons {
+        top: 60%;
+        left: 10%;
+    }
+
+    .bottoneFreccia {
+        left: 20%;
+    }
+
+    .aboutMeHome {
+        background-size: 85% 35%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    #aboutMeDescription {
+        gap: 50px;
+    }
+
+    .aboutMeHome h1 {
+        top: 50%;
+        left: 35%;
+    }
+
+    .aboutMeIcons {
+        top: 55%;
+        left: 1.5%;
+    }
+
+    .bottoneFreccia {
+        top: 85%;
+        left: 13%;
+    }
+
+    .aboutMeHome {
+        background-size: 85% 30%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    #aboutMeDescription {
+        gap: 35px;
+    }
+
+    .aboutMeHome h1 {
+        top: 50%;
+        left: 30%;
+    }
+
+    .aboutMeIcon {
+        height: 65px;
+    }
+
+    .aboutMeIcons {
+        width: 365px;
+        gap: 35px;
+        top: 55%;
+        left: 1.5%;
+    }
+
+    .bottoneFreccia {
+        top: 85%;
+        left: 4%;
+    }
+
+    .aboutMeHome {
+        background-size: 85% 30%;
     }
 }
