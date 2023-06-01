@@ -462,3 +462,49 @@
         background-size: 85% 30%;
     }
 }
+
+@media screen and (max-width:320px) {
+    .aboutMeHome {
+        background-size: 85% 27%;
+    }
+
+    .aboutMeHome h1 {
+        top: 43%;
+        left: 32%;
+        font-size: 36px;
+    }
+
+    .aboutMeIcon {
+        height: 40px;
+    }
+
+    .aboutMeIcons {
+        width: 300px;
+        top: 43%;
+        left: 3%;
+    }
+
+    .iconaSarta p {
+        width: 40px;
+        height: 19px;
+        font-size: 16px;
+    }
+
+    .specchioP p {
+        font-size: 16px;
+    }
+
+    .iconaArtigiana p {
+        font-size: 16px;
+    }
+
+    .bottoneFreccia {
+        width: 250px;
+        top: 80%;
+        left: 10%;
+    }
+
+    #aboutMeDescription {
+        height: 1600px;
+    }
+}

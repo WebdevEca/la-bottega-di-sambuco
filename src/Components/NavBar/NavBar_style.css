@@ -212,3 +212,19 @@
         font-size: 12px;
     }
 }
+
+@media screen and (max-width: 320px) {
+    #NavBar.scrolled {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .burgerMenu {
+        margin-right: 15px;
+    }
+
+    .logoSambuco {
+        margin-left: 15px;
+    }
+}
