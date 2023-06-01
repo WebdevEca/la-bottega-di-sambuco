@@ -149,3 +149,18 @@
         height: 20px;
     }
 }
+
+@media screen and (max-width:320px) {
+
+    .textContainer h1 {
+        font-size: 25px;
+    }
+
+    .textContainer h2 {
+        font-size: 14px;
+    }
+
+    .iconContainer {
+        gap: 35px;
+    }
+}

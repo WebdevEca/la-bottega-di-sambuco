@@ -223,3 +223,24 @@
         width: 315px;
     }
 }
+
+@media screen and (max-width:320px) {
+
+    .shopHeader {
+       left: 2.5%;
+    }
+
+    .btn {
+        height: 45px;
+        width: 135px;
+    }
+
+    .bottoni {
+        margin-left: 2.5%;
+    }
+
+    .bottoniInferiori {
+        width: 290px;
+    }
+
+}
