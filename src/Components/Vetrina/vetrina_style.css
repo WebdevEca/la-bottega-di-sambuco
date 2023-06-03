@@ -1,0 +1,60 @@
+#vetrinaContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.headImageVetrina {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 93.75vw;
+    height: 46.666vh;
+    background-position: center;
+    background-size: cover;
+    margin-top: 75px;
+}
+
+.headImageVetrina h1 {
+    font-family: "Lora";
+    font-size: 50px;
+    color: #FAFAFA;
+}
+
+/* -------------style sezione shop------------- */
+
+.linkProdotti {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.linkProdotti p {
+    font-family: 'Roboto';
+    font-size: 24px;
+    color: #006400;
+}
+
+.pulsanti {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px 100px;
+}
+
+/* -------------style sezione card------------- */
+
+.shopProduct {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 35px;
+}
+
+/* -------------style sezione info------------- */
+
+.shopInfo {
+    font-family: 'Roboto';
+    font-size: 24px;
+    color: #006400;
+}
