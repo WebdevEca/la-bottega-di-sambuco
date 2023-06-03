@@ -534,6 +534,7 @@
     }
 
     #aboutMeDescription {
+        height: 1350px;
         gap: 15px;
     }
 
