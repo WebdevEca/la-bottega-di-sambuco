@@ -8,8 +8,11 @@ import vetrinaVestiti from "../../Images/ImmaginiVetrine/vetrinaVestiti.png";
 import vetrinaCorsetti from "../../Images/ImmaginiVetrine/vetrinaCorsetti.png";
 
 import Button from "../Buttons/button_component";
+import { Card, AddCard } from "./Card/Card_component";
+import { getAnelli } from "../../utils/firebase/firebase";
 
 import "./vetrina_style.css";
+import { useEffect, useState } from "react";
 
 const vetrina = {
   anelli: vetrinaAnelli,
@@ -22,10 +25,19 @@ const vetrina = {
 
 const Vetrina = ({ immagineVetrina, categoriaProdotto, info }) => {
   const backgroundVetrina = vetrina[immagineVetrina];
+  const [anelli, setAnelli] = useState([]);
 
   const immagineSezioneStyle = {
     backgroundImage: `url(${backgroundVetrina})`,
   };
+
+  useEffect(() => {
+    const getAnelliMap = async () => {
+      const anelliMap = await getAnelli();
+      setAnelli(anelliMap);
+    };
+    getAnelliMap();
+  }, []);
 
   return (
     <div id="vetrinaContainer">
@@ -47,12 +59,16 @@ const Vetrina = ({ immagineVetrina, categoriaProdotto, info }) => {
       </section>
 
       <section className="shopProduct">
-        <h1>prodotto 1</h1>
-        <h1>prodotto 2</h1>
-        <h1>prodotto 3</h1>
-        <h1>prodotto 4</h1>
-        <h1>prodotto 5</h1>
-        <h1>prodotto 6</h1>
+        {anelli.map((anello, index) => (
+          <Card
+            key={index}
+            link={anello.imageUrl}
+            nomeProdotto={anello.name}
+            info={anello.taglia}
+            pietra={anello.pietra}
+          />
+        ))}
+        <AddCard />
       </section>
 
       <p className="shopInfo">{info}</p>
