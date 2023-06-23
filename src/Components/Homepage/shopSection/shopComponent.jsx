@@ -8,37 +8,32 @@ import "./shop_style.css";
 const ShopSection = () => {
   return (
     <div id="shopContainer">
-      <div className="shopHeader">
+      <section className="shopHeader">
         <h2>Vieni a scoprire il mio mondo </h2>
         <h1>Evolvi il Tuo Stile</h1>
         <h2>Per un look sofisticato e di tendenza</h2>
-      </div>
+      </section>
 
-      <div className="bottoni">
-        <div className="bottoniSuperiori">
-          <Link to={`anelli/`} className="linkComponent">
-            <Button text="Anelli" iconName="anello" />
-          </Link>
-          <Link to={`bracciali/`} className="linkComponent">
-            <Button text="Bracciali" iconName="bracciale" />
-          </Link>
-          <Link to={`collane/`} className="linkComponent">
-            <Button text="Collane" iconName="collana" />
-          </Link>
-          <Link to={`orecchini/`} className="linkComponent">
-            <Button text="Orecchini" iconName="orecchini" />
-          </Link>
-        </div>
-
-        <div className="bottoniInferiori">
-          <Link to={`vestiti/`} className="linkComponent">
-            <Button text="Vestiti" iconName="vestito" />
-          </Link>
-          <Link toto={`corsetti/`} className="linkComponent">
-            <Button text="Corsetti" iconName="corsetto" />
-          </Link>
-        </div>
-      </div>
+      <section className="Pulsanti">
+        <Link to={`anelli/`} className="linkComponent">
+          <Button text="Anelli" iconName="anello" />
+        </Link>
+        <Link to={`bracciali/`} className="linkComponent">
+          <Button text="Bracciali" iconName="bracciale" />
+        </Link>
+        <Link to={`collane/`} className="linkComponent">
+          <Button text="Collane" iconName="collana" />
+        </Link>
+        <Link to={`orecchini/`} className="linkComponent">
+          <Button text="Orecchini" iconName="orecchini" />
+        </Link>
+        <Link to={`vestiti/`} className="linkComponent">
+          <Button text="Vestiti" iconName="vestito" />
+        </Link>
+        <Link to={`corsetti/`} className="linkComponent">
+          <Button text="Corsetti" iconName="corsetto" />
+        </Link>
+      </section>
     </div>
   );
 };

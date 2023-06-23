@@ -5,7 +5,6 @@ import {
   collection,
   getDocs,
   writeBatch,
-  query,
 } from "firebase/firestore";
 
 // Your web app's Firebase configuration
@@ -39,10 +38,10 @@ export const addCollectionAndDocuments = async (
   console.log("done");
 };
 
-export const getAnelli = async () => {
+export const getOggetti = async (id) => {
   const collectionRef = collection(db, "prodotti");
   const querySnapshot = await getDocs(collectionRef);
-  const documentData = querySnapshot.docs.find((doc) => doc.id === "anelli");
+  const documentData = querySnapshot.docs.find((doc) => doc.id === id);
   const items = documentData ? documentData.data().items : [];
   return items;
 };

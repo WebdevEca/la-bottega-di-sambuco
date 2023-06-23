@@ -6,7 +6,12 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AboutMe from "./Components/AboutMe/AboutMe_component";
 import Home from "./Components/Homepage/Home_component";
-import Anelli from "./Components/VetrinaAnelli/VetrinaAnelli_component";
+import Anelli from "./Components/Vetrine/VetrinaAnelli_component";
+import Bracciali from "./Components/Vetrine/VetrinaBracciali_component";
+import Collane from "./Components/Vetrine/VetrinaCollane_component";
+import Orecchini from "./Components/Vetrine/VetrinaOrecchini_component";
+import Vestiti from "./Components/Vetrine/VetrinaVestiti_component";
+import Corsetti from "./Components/Vetrine/VetrinaCorsetti_component";
 
 const router = createBrowserRouter([
   {
@@ -23,34 +28,28 @@ const router = createBrowserRouter([
   },
   {
     path: "bracciali/",
-    element: <Anelli />,
+    element: <Bracciali />,
   },
   {
     path: "collane/",
-    element: <Anelli />,
+    element: <Collane />,
   },
   {
     path: "orecchini/",
-    element: <Anelli />,
+    element: <Orecchini />,
   },
   {
     path: "vestiti/",
-    element: <Anelli />,
+    element: <Vestiti />,
   },
   {
     path: "corsetti/",
-    element: <Anelli />,
+    element: <Corsetti />,
   },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  // <React.StrictMode>
-  <RouterProvider router={router} />,
-  {
-    /* </React.StrictMode> */
-  }
-);
+root.render(<RouterProvider router={router} />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

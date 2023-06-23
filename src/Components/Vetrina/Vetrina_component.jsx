@@ -8,11 +8,12 @@ import vetrinaVestiti from "../../Images/ImmaginiVetrine/vetrinaVestiti.png";
 import vetrinaCorsetti from "../../Images/ImmaginiVetrine/vetrinaCorsetti.png";
 
 import Button from "../Buttons/button_component";
-import { Card, AddCard } from "./Card/Card_component";
-import { getAnelli } from "../../utils/firebase/firebase";
+import { Card } from "./Card/Card_component";
+import { getOggetti } from "../../utils/firebase/firebase";
 
 import "./vetrina_style.css";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const vetrina = {
   anelli: vetrinaAnelli,
@@ -23,21 +24,21 @@ const vetrina = {
   corsetti: vetrinaCorsetti,
 };
 
-const Vetrina = ({ immagineVetrina, categoriaProdotto, info }) => {
+const Vetrina = ({ immagineVetrina, categoriaProdotto, info, prodotto }) => {
   const backgroundVetrina = vetrina[immagineVetrina];
-  const [anelli, setAnelli] = useState([]);
+  const [oggetti, setOggetti] = useState([]);
 
   const immagineSezioneStyle = {
     backgroundImage: `url(${backgroundVetrina})`,
   };
 
   useEffect(() => {
-    const getAnelliMap = async () => {
-      const anelliMap = await getAnelli();
-      setAnelli(anelliMap);
+    const getOggettiMap = async () => {
+      const oggettiMap = await getOggetti(prodotto);
+      setOggetti(oggettiMap);
     };
-    getAnelliMap();
-  }, []);
+    getOggettiMap();
+  }, [prodotto]);
 
   return (
     <div id="vetrinaContainer">
@@ -49,17 +50,31 @@ const Vetrina = ({ immagineVetrina, categoriaProdotto, info }) => {
       <section className="linkProdotti">
         <p>LE MIE ALTRE VETRINE:</p>
         <div className="pulsanti">
-          <Button text={"Anelli"} iconName={"anello"} />
-          <Button text={"Bracciali"} iconName={"bracciale"} />
-          <Button text={"Collane"} iconName={"collana"} />
-          <Button text={"Orecchini"} iconName={"orecchini"} />
-          <Button text={"Vestiti"} iconName={"vestito"} />
-          <Button text={"Corsetti"} iconName={"corsetto"} />
+          <Link to={`/anelli/`} className="linkComponent">
+            <Button text="Anelli" iconName="anello" />
+          </Link>
+          <Link to={`/bracciali/`} className="linkComponent">
+            <Button text="Bracciali" iconName="bracciale" />
+          </Link>
+          <Link to={`/collane/`} className="linkComponent">
+            <Button text="Collane" iconName="collana" />
+          </Link>
+          <Link to={`/orecchini/`} className="linkComponent">
+            <Button text="Orecchini" iconName="orecchini" />
+          </Link>
+          <Link to={`/vestiti/`} className="linkComponent">
+            <Button text="Vestiti" iconName="vestito" />
+          </Link>
+          <Link to={`/corsetti/`} className="linkComponent">
+            <Button text="Corsetti" iconName="corsetto" />
+          </Link>
         </div>
       </section>
 
+      <p className="shopInfo">{info}</p>
+
       <section className="shopProduct">
-        {anelli.map((anello, index) => (
+        {oggetti.map((anello, index) => (
           <Card
             key={index}
             link={anello.imageUrl}
@@ -68,10 +83,7 @@ const Vetrina = ({ immagineVetrina, categoriaProdotto, info }) => {
             pietra={anello.pietra}
           />
         ))}
-        <AddCard />
       </section>
-
-      <p className="shopInfo">{info}</p>
     </div>
   );
 };

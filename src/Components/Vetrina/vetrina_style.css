@@ -48,7 +48,8 @@
 .shopProduct {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 35px;
+    gap: 35px;
+    margin-bottom: 35px;
 }
 
 /* -------------style sezione info------------- */
@@ -57,4 +58,62 @@
     font-family: 'Roboto';
     font-size: 24px;
     color: #006400;
+}
+
+@media screen and (max-width: 1551px) {
+    .shopProduct {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .headImageVetrina {
+        height: 25vh;
+    }
+
+    .shopProduct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pulsanti {
+        gap: 35px 50px;
+    }
+
+    .shopProduct{
+        gap: 15px;
+    }
+  
+}
+
+@media screen and (max-width: 431px) {
+
+    .headImageVetrina {
+        height: 15vh;
+    }
+
+    .headImageVetrina h1 {
+        font-size: 35px;
+    }
+
+    .shopProduct {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pulsanti {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    #cardContainer {
+        width: 300px;
+    }
+    
+    .pulsanti {
+        gap: 15px;
+    }
 }

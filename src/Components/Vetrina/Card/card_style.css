@@ -13,11 +13,12 @@
 .cardImage img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
 
 .cardInfo {
-    height: 220px;
+    height: 210px;
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -33,7 +34,7 @@
 }
 
 .cardInfo p {
-    width: 350px;
+    width: 75%;
     font-family: "Roboto";
     font-weight: 200;
     font-size: 24px;
@@ -81,4 +82,67 @@
 
 .addCard:hover h1 {
     color: #F5F5F5;
+}
+
+@media screen and (max-width: 768px) {
+    #cardContainer {
+        width: 300px;
+        height: 400px;
+    }
+
+    .cardImage {
+        width: 300px;
+        height: 200px;
+    }
+
+    .cardInfo {
+        height: 200px;
+        gap: 10px;
+    }
+
+    .cardInfo h1 {
+        font-size: 24px;
+    }
+
+     .cardInfo h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    #cardContainer {
+        width: 400px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cardImage {
+        width: 155px;
+        height: 150px;
+    }
+
+    .cardImage img {
+        border-radius: 10px 0 0 10px;
+        object-fit: cover;
+    }
+
+    .cardInfo {
+        width: 233px;
+        height: 150px;
+    }
+
+    .cardInfo p {
+        font-size: 16px;
+    }
+
+    .cardInfo button {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    #cardContainer {
+        width: 350px;
+    }
 }
