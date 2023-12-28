@@ -1,0 +1,44 @@
+.navContainer {
+    width: 100%;
+    height: 100px;
+    padding: 15px 100px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, rgba(54, 68, 61, 0.00) 112.2%);
+    position: fixed;
+    z-index: 1;
+}
+
+.logoContainer {
+    width: 75px;
+    height: 75px;
+}
+
+.navLinkContainer {
+    gap: 50px;
+}
+
+.navLinkContainer p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* On screens that are 1024px or less */
+@media screen and (max-width: 1024px){
+    .navContainer{
+        padding: 0 50px;
+
+    }
+
+    .navLinkContainer{
+        display: none;
+    }
+
+}
+
+/* Su schermi che sono 1025px o Piu */
+@media (min-width: 1025px) {
+    .burgerMenu {
+        display: none;
+    }
+}
+

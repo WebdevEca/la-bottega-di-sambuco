@@ -1,0 +1,215 @@
+/* ----- HERO SECTION ----- */
+.heroSection {
+    width: 100%;
+    height: 100vh;
+    padding: 0 100px;
+    background-image: url("../../public/Images/backgroundDesktop.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.heroSection h1 {
+    font-size: 6rem;
+    line-height: normal;
+    font-weight: 700;
+}
+
+.heroSection h2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.buttonContainer {
+    margin-top: 40px;
+    gap: 66px;
+}
+
+.buttonContainer button {
+    width: 247px;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    transition: 500ms;
+}
+
+.buttonContainer button:hover {
+    color: var(--background-color);
+    background-color: #ffffff;
+}
+
+.buttonContainer p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* ------------------------- */
+
+/* ----- INFO SECTION ----- */
+
+.infoSection {
+    padding: 40px 100px;
+    gap: 40px;
+}
+
+/* ------------------------- */
+
+/* ----- NEWSLETTER SECTION ----- */
+
+.newsletterSection {
+    background:url("../../public/Images/backgroundNewsletter.webp") ;
+    background-size: cover;
+    background-position: center;
+    padding: 150px 200px;
+    gap: 40px;
+}
+
+.newsletterForm input {
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.formButton {
+    color: #ffffff;
+    background-color: transparent;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.formButton:hover {
+    background-color: #ffffff;
+    color: #36463E;
+}
+
+/* ------------------------- */
+
+/* On screens that are 1024px or less */
+@media screen and (max-width: 1024px) {
+    /* ----- HERO SECTION ----- */
+    .heroSection {
+        width: 100%;
+        height: 100vh;
+        padding: 0 50px;
+        background-image: url("../../public/Images/backgroundTablet.webp");
+    } 
+
+    .heroSection h1 {
+        font-size: 4.5rem;
+    }
+
+    .heroSection h2 {
+        font-size: 2.25rem;
+    }
+
+    /* ------------------------- */
+
+    /* ----- INFO SECTION ----- */
+
+    .infoSection {
+        padding: 40px 50px;
+    }
+
+    .infoSection h2 {
+        font-size: 3rem;
+    }
+
+    /* ------------------------- */
+
+    /* ----- NEWSLETTER SECTION ----- */
+
+    .newsletterSection h2 {
+        font-size: 2.25rem;
+    }
+
+    /* ------------------------- */
+}
+
+/* On screens that are 744px or less */
+@media screen and (max-width: 744px) {
+    /* ----- HERO SECTION ----- */
+    .heroSection {
+        align-items: center;
+        text-align: center;
+    }
+
+    .buttonContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* ------------------------- */
+
+    /* ----- NEWSLETTER SECTION ----- */
+
+    .newsletterSection {
+       padding: 100px 25px;
+    }
+    /* ------------------------- */
+}
+
+/* On screens that are 552px or less */
+@media screen and (max-width: 552px) {
+    /* ----- HERO SECTION ----- */
+    .heroSection {
+        padding: 0 25px;
+    }
+    .heroSection h1 {
+        font-size: 2.25rem;
+    }
+
+    .heroSection h2 {
+        font-size: 1.5rem;
+    }
+
+    .buttonContainer button {
+        font-size: 1rem;
+    }
+
+    .buttonContainer p {
+        font-size: 1rem;
+    }
+
+    /* ------------------------- */
+
+    /* ----- INFO SECTION ----- */
+
+    .infoSection {
+        padding: 40px 25px;
+        font-size: 2.25rem;
+    }
+
+    .infoSection p {
+        font-size: 1rem;
+    }
+
+    .newsletterSection h2 {
+        font-size: 1.5rem;
+    }
+
+    /* ------------------------- */
+
+    /* ----- NEWSLETTER SECTION ----- */
+
+    .newsletterForm {
+        font-size: 1rem;
+    }
+
+    .newsletterForm input {
+        padding: 10px 20px;
+    }
+
+    .formButton {
+        padding: 10px 20px;
+    }
+
+    /* ------------------------- */
+}
+
