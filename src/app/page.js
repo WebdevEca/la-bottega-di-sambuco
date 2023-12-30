@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
+import Link from "next/link";
 
-import NavBar from "@/app/components/navBar/NavBar_component";
 import Info from "./components/infoComponent/Info_component";
 import Footer from "./components/footer/Footer_component";
 
@@ -11,10 +11,6 @@ import Info3 from "../../public/Images/Info3.webp";
 export default function Home() {
   return (
     <div className={`${styles.homeContainer}`}>
-      {/* ------ NAVBAR SECTION ------ */}
-      <NavBar />
-      {/* ------ END NAVBAR SECTION ------ */}
-
       {/* ------ HERO SECTION ------ */}
       <section className={`${styles.heroSection} flex flex-col justify-center`}>
         <h1>
@@ -24,7 +20,9 @@ export default function Home() {
         </h1>
         <h2>ti do il benvenuto nella Bottega di Sambuco</h2>
         <div className={`${styles.buttonContainer} flex items-center`}>
-          <button>Esplora la mia arte</button>
+          <Link href="/shop">
+            <button>Esplora la mia arte</button>
+          </Link>
           <p>Scopri chi sono</p>
         </div>
       </section>

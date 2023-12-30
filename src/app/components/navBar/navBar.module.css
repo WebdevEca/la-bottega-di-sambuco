@@ -29,9 +29,34 @@
 
     }
 
+    .logoContainer {
+        width: 55px;
+        height: 55px;
+    }
+
     .navLinkContainer{
         display: none;
     }
+
+    .burgerMenu {
+        width: 37.5px;
+        height: 25px;
+    }
+
+}
+
+/* On screens that are 552px or less */
+
+@media screen and (max-width: 552px) {
+    .logoContainer {
+        width: 51px;
+        height: 45px;
+    }
+
+    .burgerMenu {
+        width: 22.5px;
+        height: 15px;
+    } 
 
 }
 
