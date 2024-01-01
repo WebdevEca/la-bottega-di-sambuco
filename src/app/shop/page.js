@@ -3,6 +3,7 @@ import Image from "next/image";
 import bannerImage from "../../../public/Images/shopBanner.webp";
 import Footer from "../components/footer/Footer_component";
 import Card from "../components/cardComponent/Card";
+import Link from "next/link";
 
 import backgroundAnelli from "../../../public/Images/cardBackgroundAnelli.webp";
 import backgroundBracciali from "../../../public/Images/cardBackgroundBracciali.webp";
@@ -43,11 +44,14 @@ export default function Shop() {
       <div
         className={`${styles.cardsContainer} grid grid-flow-row grid-cols-4`}
       >
-        <Card
-          nome="Vetrina Anelli"
-          backgroundImage={backgroundAnelli}
-          vetrina="anelli"
-        />
+        <Link href="/shop/anelli">
+          <Card
+            nome="Vetrina Anelli"
+            backgroundImage={backgroundAnelli}
+            vetrina="anelli"
+          />
+        </Link>
+
         <Card
           nome="Vetrina Bracciali"
           backgroundImage={backgroundBracciali}

@@ -1,0 +1,64 @@
+.windowContainer {
+    width: 100%;
+    padding: 120px 100px 0px 100px; 
+    gap: 20px;
+}
+
+.bannerImage {
+    border-radius: 5px;
+    height: 400px;
+}
+
+.cardCollection {
+    gap: 20px;
+}
+
+.textInfo {
+    padding: 20px 0;
+    background-color: #2D3B34;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .windowContainer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .bannerContainer h2 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .cardCollection {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 552px) {
+
+    .windowContainer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    .bannerContainer h2 {
+        font-size: 32px;
+    }
+
+    .bannerImage {
+        border-radius: 5px;
+        height: 250px;
+    }
+
+    .textInfo {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .cardCollection {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
