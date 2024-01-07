@@ -7,12 +7,19 @@
     z-index: 1;
 }
 
+.navContainer.scrolling {
+    background: #2D3B34;
+    transition: background 0.5s ease; /* Aggiunge una transizione fluida */
+  }
+  
+
 .logoContainer {
     width: 75px;
     height: 75px;
 }
 
 .navLinkContainer {
+    display: flex;
     gap: 50px;
 }
 
@@ -20,6 +27,49 @@
     font-size: 1.5rem;
     font-weight: 400;
     cursor: pointer;
+}
+
+/* Aggiungi la classe navLink per i tuoi link */
+.navLink {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Aggiungi l'animazione di sottolineatura */
+  .navLink::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff; /* Colore della sottolineatura */
+    transition: width 0.5s ease;
+  }
+  
+  /* Aggiungi l'effetto di sottolineatura al passaggio del mouse */
+  .navLink:hover::before {
+    width: 100%;
+  }
+
+.burgerMenu {
+    width: 37.5px;
+    height: 25px;
+}
+
+.mobileMenu {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2D3B34 ;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 72px;
+}
+
+.closeButton {
+    padding: 50px;
 }
 
 /* On screens that are 1024px or less */

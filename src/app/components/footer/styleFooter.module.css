@@ -6,6 +6,8 @@
 }
 
 .socialIcons {
+    width: auto;
+    height: 25px;
     gap: 50px;
 }
 

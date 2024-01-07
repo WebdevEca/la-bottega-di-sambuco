@@ -44,7 +44,7 @@ export default function Shop() {
       <div
         className={`${styles.cardsContainer} grid grid-flow-row grid-cols-4`}
       >
-        <Link href="/shop/anelli">
+        <Link href="/vetrine/anelli">
           <Card
             nome="Vetrina Anelli"
             backgroundImage={backgroundAnelli}
@@ -52,31 +52,45 @@ export default function Shop() {
           />
         </Link>
 
-        <Card
-          nome="Vetrina Bracciali"
-          backgroundImage={backgroundBracciali}
-          vetrina="bracciali"
-        />
-        <Card
-          nome="Vetrina Collane"
-          backgroundImage={backgroundCollane}
-          vetrina="collane"
-        />
-        <Card
-          nome="Vetrina Orecchini"
-          backgroundImage={backgroundOrecchini}
-          vetrina="Orecchini"
-        />
-        <Card
-          nome="Vetrina Vestiti"
-          backgroundImage={backgroundVestiti}
-          vetrina="vestiti"
-        />
-        <Card
-          nome="Vetrina Corsetti"
-          backgroundImage={backgroundCorsetti}
-          vetrina="corsetti"
-        />
+        <Link href="/vetrine/bracciali">
+          <Card
+            nome="Vetrina Bracciali"
+            backgroundImage={backgroundBracciali}
+            vetrina="bracciali"
+          />
+        </Link>
+
+        <Link href="/vetrine/collane">
+          <Card
+            nome="Vetrina Collane"
+            backgroundImage={backgroundCollane}
+            vetrina="collane"
+          />
+        </Link>
+
+        <Link href="/vetrine/orecchini">
+          <Card
+            nome="Vetrina Orecchini"
+            backgroundImage={backgroundOrecchini}
+            vetrina="Orecchini"
+          />
+        </Link>
+
+        <Link href="/vetrine/vestiti">
+          <Card
+            nome="Vetrina Vestiti"
+            backgroundImage={backgroundVestiti}
+            vetrina="vestiti"
+          />
+        </Link>
+
+        <Link href="/vetrine/corsetti">
+          <Card
+            nome="Vetrina Corsetti"
+            backgroundImage={backgroundCorsetti}
+            vetrina="corsetti"
+          />
+        </Link>
       </div>
       <Footer />
     </div>

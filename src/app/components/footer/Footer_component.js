@@ -16,25 +16,15 @@ const Footer = () => {
       <div className={`${styles.socialIcons} flex flex-row`}>
         <Image
           src={Instagram}
-          width={25}
-          height={25}
           alt="Icona Instagram"
           className={styles.socialIcon}
         />
         <Image
           src={Facebook}
-          width={13.9}
-          height={25}
           alt="Icona Facebook "
           className={styles.socialIcon}
         />
-        <Image
-          src={TikTok}
-          width={25}
-          height={25}
-          alt="Icona Tik Tok"
-          className={styles.socialIcon}
-        />
+        <Image src={TikTok} alt="Icona Tik Tok" className={styles.socialIcon} />
       </div>
       <p className="text-2xl">
         @ 2023 La Bottega di Sambuco Tutti i diritti riservati

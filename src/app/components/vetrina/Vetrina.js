@@ -4,7 +4,7 @@ import bannerImage from "../../../../public/Images/shopBanner.webp";
 import ShopCard from "../shopCardComponent/ShopCard";
 import Footer from "../footer/Footer_component";
 
-const Vetrina = ({ tipo }) => {
+const Vetrina = ({ id, tipo, nomeProdotto, infoProdotto }) => {
   return (
     <div className={`${styles.windowContainer} flex flex-col`}>
       <div className={`${styles.bannerContainer} w-full relative`}>
@@ -13,7 +13,7 @@ const Vetrina = ({ tipo }) => {
         </h2>
         <Image
           src={bannerImage}
-          alt="Immagine vetrina Anelli"
+          alt={`Immagine vetrina ${tipo}`}
           className={`${styles.bannerImage} object-cover w-full`}
         />
       </div>
@@ -22,12 +22,10 @@ const Vetrina = ({ tipo }) => {
         className={`${styles.cardCollection} grid grid-flow-row grid-cols-4`}
       >
         <ShopCard
-          numero="1"
+          numero={`${id}`}
           Immagine={bannerImage}
-          nomeProdotto="Anello di peppe"
-          infoAnello="Anello a fascia, taglia 25, rubino"
-          disponibilità={25}
-          prezzo="999"
+          nomeProdotto={`${nomeProdotto}`}
+          infoAnello={`${infoProdotto}`}
         />
         <ShopCard
           numero="1"

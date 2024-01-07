@@ -20,7 +20,7 @@ export default function Home() {
         </h1>
         <h2>ti do il benvenuto nella Bottega di Sambuco</h2>
         <div className={`${styles.buttonContainer} flex items-center`}>
-          <Link href="/shop">
+          <Link href="/vetrine">
             <button>Esplora la mia arte</button>
           </Link>
           <p>Scopri chi sono</p>

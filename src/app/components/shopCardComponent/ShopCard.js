@@ -15,14 +15,13 @@ const ShopCard = ({
         <Image
           src={Immagine}
           className={`${styles.cardBanner} w-full object-cover`}
+          alt="Immagine Prodotto"
         />
       </div>
 
       <div className={`${styles.cardText} flex flex-col`}>
         <p className={styles.nomeProdotto}>{nomeProdotto}</p>
         <p className={styles.infoAnello}>{infoAnello}</p>
-        <p className={styles.infoAnello}>Disponibilità: {disponibilità}</p>
-        <h2 className={styles.prezzo}>Prezzo: {prezzo}$</h2>
       </div>
     </div>
   );

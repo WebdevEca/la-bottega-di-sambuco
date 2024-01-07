@@ -20,6 +20,7 @@ const Info = ({ subHead, text, img, srcImg, flex, textAlign }) => {
           src={img}
           alt={srcImg}
           fill
+          sizes="100%"
           className={`${styles.infoImage} object-cover`}
         />
       </section>
